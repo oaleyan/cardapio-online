@@ -15,10 +15,12 @@ interface DishDetailPageProps {
   };
 }
 
-export default function DishDetailPage({ params }: DishDetailPageProps) {  
+export default function DishDetailPage({ params }: DishDetailPageProps) {
+  
   const dish = dishes.find((d) => d.id === params.id);
   const { addItem } = useCart();
 
+  console.log(dish)
   if (!dish) {
     notFound(); // Redireciona para a página 404
   }

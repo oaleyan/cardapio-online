@@ -44,7 +44,7 @@ export const dishes: Dish[] = [
   {
     id: '5',
     name: 'Torta de Limão',
-    image: 'torta-de-limao.webp',
+    image: '/torta-de-limao.webp',
     price: 20.00,
     category: 'vegetariano',
     tags: ['doce', 'refeição leve'],
@@ -53,7 +53,7 @@ export const dishes: Dish[] = [
   {
     id: '6',
     name: 'Frango Xadrez',
-    image: 'frango-xadrez.jpg',
+    image: '/frango-xadrez.jpg',
     price: 40.00,
     category: 'com carne',
     tags: ['picante'],
@@ -62,7 +62,7 @@ export const dishes: Dish[] = [
   {
     id: '7',
     name: 'Açaí com Granola',
-    image: 'acai-granola.jpg',
+    image: '/acai-granola.jpg',
     price: 25.00,
     category: 'vegano',
     tags: ['saudável', 'refeição leve'],
@@ -71,7 +71,7 @@ export const dishes: Dish[] = [
   {
     id: '8',
     name: 'Pizza Margherita',
-    image: 'pizza-marguerita.jpg',
+    image: '/pizza-marguerita.jpg',
     price: 50.00,
     category: 'vegetariano',
     tags: ['fast food'],

@@ -1,19 +1,20 @@
-"use client"
+"use client";
 
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { Dish } from '@/lib/types';
-import Button from '@/components/ui/Button';
-import { useCart } from '@/app/cardapio/cart-provider';
-import { motion } from 'framer-motion';
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { Dish } from "@/lib/types";
+import Button from "@/components/ui/Button";
+import { useCart } from "@/app/cardapio/cart-provider";
+import { motion } from "framer-motion";
 
 
 interface DishCardProps {
   dish: Dish;
+  
 }
 
-const DishCard = ({ dish }:DishCardProps) => {
+const DishCard = ({ dish }: DishCardProps) => {
   const { addItem } = useCart();
 
   return (
@@ -25,15 +26,21 @@ const DishCard = ({ dish }:DishCardProps) => {
       transition={{ duration: 0.3 }}
       className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col"
     >
-      <Link href={`/pratos/${dish.id}`} className="block relative w-full h-45 overflow-hidden">
-        <Image
-          src="/lanche2.jpg"
-          alt={dish.name}
-          fill
-          className="object-cover hover:scale-105 transition-transform duration-300"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        />
-      </Link>
+      <div>
+        <Link
+          href={`/pratos/${dish.id}`}
+          className="block relative w-full h-45 overflow-hidden"
+        >
+        
+          <Image
+            src={dish.image}
+            alt={dish.name}
+            fill
+            className="object-cover hover:scale-105 transition-transform duration-300"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+        </Link>
+      </div>
       <div className="p-4 flex-grow flex flex-col justify-between">
         <h3 className="text-xl font-semibold mb-2 line-clamp-2">{dish.name}</h3>
         <p className="text-gray-600 text-sm mb-2">
@@ -50,7 +57,9 @@ const DishCard = ({ dish }:DishCardProps) => {
           ))}
         </div>
         <div className="flex justify-between items-center mt-auto">
-          <span className="text-xl font-bold text-blue-700">R$ {dish.price.toFixed(2)}</span>
+          <span className="text-xl font-bold text-blue-700">
+            R$ {dish.price.toFixed(2)}
+          </span>
           <Button onClick={() => addItem(dish)}>Adicionar</Button>
         </div>
       </div>
