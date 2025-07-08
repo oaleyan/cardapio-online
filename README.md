@@ -72,6 +72,6 @@ Contribuições são sempre bem-vindas\! Se você tiver alguma sugestão, melhor
 
 ## ✉️ Contato
 
-Alexandre Yan/oaleyan - [Seu Email](alexandre.yan.grossl@gmail.com)
+Alexandre Yan/oaleyan - [alexandre.yan.grossl@gmail.com]
 
 -----
