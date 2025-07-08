@@ -1,7 +1,3 @@
-Com certeza\! Aqui está um modelo de `README.md` para o seu projeto de cardápio online, feito em Next.js e Tailwind CSS:
-
------
-
 # 🍽️ Cardápio Online
 
 Um cardápio online moderno e responsivo, desenvolvido com Next.js e Tailwind CSS, que permite aos usuários explorar diversas opções de pratos com filtros intuitivos por categoria e tags.
