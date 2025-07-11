@@ -10,10 +10,10 @@ const Checkbox: React.FC<CheckboxProps> = ({ label, ...props }) => {
       <input
         type="checkbox"
         id={"heckbox-etlk6e40e"}
-        className="form-checkbox h-4 w-4 text-blue-600 rounded"
+        className="form-checkbox bg-orange-800 h-4 w-4 text-orange-600 rounded"
         {...props}
       />
-      <label htmlFor={"heckbox-etlk6e40e"} className="text-gray-700 text-sm cursor-pointer">
+      <label htmlFor={"heckbox-etlk6e40e"} className=" text-gray-700 text-sm cursor-pointer">
         {label}
       </label>
     </div>

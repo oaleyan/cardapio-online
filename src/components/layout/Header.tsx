@@ -15,15 +15,18 @@ const Header: React.FC = () => {
       animate={{ y: 0 }}
       transition={{ type: "spring", stiffness: 120 }}
       className="bg-white shadow-md py-4 sticky top-0 z-50"
+      
     >
       <div className="container mx-auto flex justify-between items-center px-4">
-        <Link href="/" className="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors">
-          Catálogo de Pratos
+        <Link href="/" className="text-2xl font-bold text-orange-700 hover:text-orange-900 transition-colors">
+          <div>
+            <img src="/logo.png" alt="Logo sweet" width={110} height={50} />
+            </div>
         </Link>
         <nav>
           <ul className="flex space-x-6">
             <li>
-              <Link href="/" className="text-gray-700 hover:text-blue-600 transition-colors">
+              <Link href="/" className="text-orange-700 hover:text-orange-900 transition-colors">
                 Início
               </Link>
             </li>

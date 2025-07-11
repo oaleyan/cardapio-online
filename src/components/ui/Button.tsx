@@ -18,7 +18,7 @@ const Button: React.FC<ButtonProps> = ({ children, variant = 'primary', classNam
       variantClasses = 'bg-gray-200 text-gray-800 hover:bg-gray-300';
       break;
     case 'outline':
-      variantClasses = 'border border-blue-600 text-blue-600 hover:bg-blue-50';
+      variantClasses = 'border border-orange-600 text-orange-600 hover:bg-orange-900text-white';
       break;
     default:
       break;

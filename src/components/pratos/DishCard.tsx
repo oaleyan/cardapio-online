@@ -42,7 +42,7 @@ const DishCard = ({ dish }: DishCardProps) => {
         </Link>
       </div>
       <div className="p-4 flex-grow flex flex-col justify-between">
-        <h3 className="text-xl font-semibold mb-2 line-clamp-2">{dish.name}</h3>
+        <h3 className="text-xl text-orange-700 font-semibold mb-2 line-clamp-2">{dish.name}</h3>
         <p className="text-gray-600 text-sm mb-2">
           Categoria: <span className="font-medium">{dish.category}</span>
         </p>
@@ -57,7 +57,7 @@ const DishCard = ({ dish }: DishCardProps) => {
           ))}
         </div>
         <div className="flex justify-between items-center mt-auto">
-          <span className="text-xl font-bold text-blue-700">
+          <span className="text-xl font-bold text-orange-700">
             R$ {dish.price.toFixed(2)}
           </span>
           <Button onClick={() => addItem(dish)}>Adicionar</Button>

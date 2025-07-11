@@ -43,6 +43,7 @@ const DishFilters: React.FC<DishFiltersProps> = ({
               label={category}
               checked={selectedCategories.includes(category)}
               onChange={(e) => onCategoryChange(category, e.target.checked)}
+              
             />
           ))}
         </div>
