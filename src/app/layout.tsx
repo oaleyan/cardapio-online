@@ -8,7 +8,7 @@ import CartSidebar from '@/components/layout/CartSidebar';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Catálogo de Pratos',
+  title: 'Sweet & Salty',
   description: 'Um catálogo de pratos delicioso com filtros e carrinho de reserva.',
 };
 
