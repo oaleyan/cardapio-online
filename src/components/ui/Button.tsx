@@ -12,7 +12,7 @@ const Button: React.FC<ButtonProps> = ({ children, variant = 'primary', classNam
 
   switch (variant) {
     case 'primary':
-      variantClasses = 'bg-blue-600 text-white hover:bg-blue-700';
+      variantClasses = 'bg-orange-300 text-orange-800 hover:bg-orange-950 text-white';
       break;
     case 'secondary':
       variantClasses = 'bg-gray-200 text-gray-800 hover:bg-gray-300';
