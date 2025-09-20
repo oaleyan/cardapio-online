@@ -57,7 +57,7 @@ const DishCard = ({ dish }: DishCardProps) => {
           ))}
         </div>
         <div className="flex justify-between items-center mt-auto">
-          <span className="text-xl font-bold text-orange-700">
+          <span className="text-l font-bold text-orange-700">
             R$ {dish.price.toFixed(2)}
           </span>
           <Button onClick={() => addItem(dish)}>Adicionar</Button>
